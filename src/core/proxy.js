@@ -39,7 +39,7 @@ const requestHandler = async (request, proxy, overrides = {}) => {
             body: response.body
         });
     } catch (error) {
-        await request.abort();
+        await request.continue();
     }
 };
 
