@@ -22,7 +22,7 @@ const requestHandler = async (request, proxy, overrides = {}) => {
         throwHttpErrors: false,
         ignoreInvalidCookies: true,
         followRedirect: false,
-        timeout: {request: 60000},
+        timeout: { connect: 30000, secureConnect: 30000, lookup: 30000, socket: 30000, request: 30000, response: 30000, send: 30000 }
     };
     try {
         const response = await got(overrides.url || request.url(), options);

@@ -1,5 +1,5 @@
 {
-  "name": "puppeteer-page-proxy",
+  "name": "puppeteer-page-proxy-nghia",
   "description": "Additional Node.js module to use with 'puppeteer' for setting proxies per page basis.",
   "version": "1.2.8",
   "author": "Cuadrix <cuadrix12000@gmail.com> (https://github.com/Cuadrix)",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Cuadrix/puppeteer-page-proxy.git"
+    "url": "git+https://github.com/Cuadrix/puppeteer-page-proxy.git"
   },
   "keywords": [
     "puppeteer",
@@ -27,5 +27,8 @@
     "https-proxy-agent": "^5.0.0",
     "socks-proxy-agent": "^5.0.0",
     "tough-cookie": "^4.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/Cuadrix/puppeteer-page-proxy/issues"
   }
 }
