@@ -21,7 +21,8 @@ const requestHandler = async (request, proxy, overrides = {}) => {
         maxRedirects: 15,
         throwHttpErrors: false,
         ignoreInvalidCookies: true,
-        followRedirect: false
+        followRedirect: false,
+        timeout: {request: 60000},
     };
     try {
         const response = await got(overrides.url || request.url(), options);
